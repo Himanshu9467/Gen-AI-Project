@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>Research Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="gen-bg">
+  <div class="meteor m1"></div>
+  <div class="meteor m2"></div>
+  <div class="meteor m3"></div>
+  <div class="meteor m4"></div>
+  <div class="meteor m5"></div>
+
+  <div class="container">
+    <h2>Select Research Title</h2>
+
+    <select id="titleDropdown"></select>
+    <button onclick="generateAbstract()">Generate Abstract</button>
+
+    <div id="loader" class="loader">Generating research-level abstract using LLaMA...</div>
+
+    <h3>Abstract</h3>
+    <div id="abstractText" class="paper"></div>
+
+    <h3>Human vs LLaMA Comparison</h3>
+    <p><b>Human:</b> <span id="humanText"></span></p>
+    <p><b>LLaMA:</b> <span id="llmText"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

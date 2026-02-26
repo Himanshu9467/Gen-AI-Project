@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Research Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="home-bg">
+  <div class="meteor m1"></div>
+  <div class="meteor m2"></div>
+  <div class="meteor m3"></div>
+  <div class="meteor m4"></div>
+  <div class="meteor m5"></div>
+
+  <div class="card">
+    <h1>AI Research Assistant</h1>
+    <p>Generate research-level titles and abstracts using LLaMA</p>
+
+    <input id="themeInput" placeholder="Enter Research Theme">
+    <button onclick="go()">Generate Titles</button>
+  </div>
+
+  <script>
+    function go() {
+      localStorage.setItem("theme", themeInput.value);
+      window.location.href = "generator.html";
+    }
+  </script>
+
+</body>
+</html>
